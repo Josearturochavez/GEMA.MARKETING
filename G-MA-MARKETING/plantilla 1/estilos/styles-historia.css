@@ -1,0 +1,39 @@
+@media (orientation: portrait) {
+
+	.main__grid-container{
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: 1fr;
+	}
+
+}
+
+@media (orientation: landscape) {
+
+	.header-link__menu,.header-link__space{
+		display: none;
+	}
+
+	.historia__grid-container{
+		grid-template-rows: minmax(70vh,1fr) 40vh;
+		grid-template-columns: 77vw 20vw;
+	}
+
+	.historia__main-container{
+		width: 100%;
+		height: 100%;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		background-color: #3D4350;
+	}
+
+	.historia__aside{
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+
+	.historia__footer{
+		grid-row: 2/3;
+		grid-column: 1/3;
+	}
+
+}
