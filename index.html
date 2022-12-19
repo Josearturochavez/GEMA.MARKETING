@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>
-		pagina 1
-	</title>
+	<link rel="stylesheet" type="text/css" href="estilos/normalize.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GEMA MARKETING</title>
+	<script src="https://kit.fontawesome.com/224dae2dd6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	algo de texto para el index
-</body>
+	<div id="page">
+
+		<header>
+			<nav>
+				<h3>
+					<a href="index.html">
+						<figure>
+							<img src="sadf">
+						</figure>
+					</a>
+				</h3>
+				<ul>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Compañía</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<article class="presentacion">
+				<section class="presentacion__texto">
+					<h1>GEMA MARKETING</h1>
+					<p class="presentacion__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
+				</section>
+				<section class="presentacion__imagen">
+					<figure>
+						<img src="visuales/logo-completo.pn">
+					</figure>
+				</section>
+			</article>
+
+			<article class="video-descriptivo">
+				<figure>
+					<video src="visuales/video-descriptivo.mp4"></video>
+				</figure>
+			</article>
+
+			<article class="contacto">
+				<h2>CONTACTA CON NOSOTROS</h2>
+				<ul>
+					<li>EMAIL<i class="fa-solid fa-envelope"></i><h3>Envianos un correo electronico para ponernos en contacto</h3></li>
+					<li><a href="https://api.whatsapp.com/send?phone=523511152996&text=Me%20gustaría%20recivir%20informacion%20sobre%20los%20paquetes%20de%20GEMA-MARKETING">WHATSSAPP<i class="fa-brands fa-square-whatsapp"></i></a><h3>Manda un mensaje para que te respondamos a la brevedad</h3></li>
+					<li>LLAMANOS!<i class="fa-solid fa-phone"></i><h3>Si es que estamos en nuestro horario disponible (00:00-00:00) te contestaremos inmediatamente</h3></li>
+					<li>VISITANOS<i class="fa-solid fa-house"></i><h3>puedes agendar una cita presencial para valorar aprectos concretos y tomar un acuerdo directo</h3></li>
+				</ul>
+			</article>
+<!--ARREGLA ESTE LABEL CON EL VIDEO https://www.youtube.com/watch?v=Xh94Osf1hvU-->
+			<article class="paquetes">
+				<div class="paquetes__menu">
+					<label for="paquete1">BASICO</label>
+					<label for="paquete2">AVANZADO</label>
+					<label for="paquete3">PERSONALIZADO</label>
+				</div>
+				<div class="paquetes__descripcion">
+					<input type="radio" name="paquete1" id="paquete1" checked>
+					<div class="tab1">
+						<h2>BASICO</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+					</div>
+					<input type="radio" name="paquete2" id="paquete2">
+					<div class="tab2">
+						<h2>AVANZADO</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+					</div>
+					<input type="radio" name="paquete3" id="paquete3">
+					<div class="tab3">
+						<h2>PERSONALIZADO</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer>
+			<article class="empresa">
+				<figure><img src="visuales/logo.png"></figure>
+				<address>
+					GEMA-MARKETING<br>PRIVADA DE CORREGIDORA N°80 COLONIA CENTRO<br>ZAMORA MICHOACAN<br>
+					<br>
+					Teléfono:+52 351 115 2996<br>
+					E-Mail: gema.marketing.contacto@gmail.com
+				</address>
+			</article>
+			<article class="legal">
+				<nav>
+					<ul>
+						<li>Copyright GEMA MARKETING A.C. 2022</li>
+						<li><a href="politicas">Políticas de privacidad</a></li>
+					</ul>
+				</nav>
+			</article>
+		</footer>
+	</div>
 </html>
