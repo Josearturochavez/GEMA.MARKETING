@@ -1,7 +1,10 @@
+
+
 :root{
 	--header-height: min(15vh,19vw);
-	--primary-color-1: #fff;
-	--primary-color-2: #b53;
+	--primary-color-1: #79b;
+	--primary-color-2: #9a4;
+	--secondary-color-1: #b86;
 }
 
 body{
@@ -17,6 +20,7 @@ body{
 }
 
 header{
+	font-size: min(2.4vh, 4vw);
 	background-color: var(--primary-color-2);
 	position: fixed;
 	top: 0;
@@ -43,7 +47,7 @@ nav ul{
 .nav-button{
 	border-radius: 50px;
 	width: 20%;
-	height: 50%;
+	height: 42%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -52,6 +56,15 @@ nav ul{
 .logotipo{
 	width: 20%;
 	height: 100%;
+}
+
+.logotipo-figure{
+	height: var(--header-height);
+}
+
+.logotipo-img{
+	max-height: 100%;
+	max-width: 120%;
 }
 
 main{
