@@ -19,7 +19,16 @@ body{
 	background-color: var(--primary-color-1);
 }
 
+h1,h2{
+	font-family: "codec";
+}
+
+h3{
+	text-align: justify;
+}
+
 header{
+	font-family: "codec";
 	font-size: min(2.4vh, 4vw);
 	background-color: var(--primary-color-2);
 	position: fixed;
