@@ -29,7 +29,6 @@ header{
 }
 
 nav{
-	display: flex;
 	width: 100%;
 	height: 100%;
 	justify-content: space-between;
@@ -59,12 +58,32 @@ nav ul{
 }
 
 .logotipo-figure{
+	display: flex;
+	justify-content: center;
 	height: var(--header-height);
+	align-items: center;
 }
 
 .logotipo-img{
-	max-height: 100%;
-	max-width: 120%;
+	max-height: 80%;
+	max-width: 80%;
+}
+
+@media (orientation: landscape){
+	.portatil{
+		display: none;
+	}
+	.pc{
+		display: flex;
+	}
+}
+@media (orientation: portrait){
+	.portatil{
+		display: flex;
+	}
+	.pc{
+		display: none;
+	}
 }
 
 main{
