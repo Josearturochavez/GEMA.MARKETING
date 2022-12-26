@@ -93,7 +93,7 @@ video{
 	margin: min(10vh,10vw) 0;
 }
 
-.contacto h2 {
+.contacto h2{
 	height: 10%;
 }
 
@@ -119,4 +119,8 @@ video{
 	border: 1vw solid var(--primary-color-3);
 	border-radius: min(8vw,8vh);
 	padding: 5%;
+}
+
+.contacto ul li a{
+	color: var(--primary-color-2);
 }
