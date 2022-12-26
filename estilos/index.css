@@ -113,6 +113,10 @@ video{
 }
 
 .contacto ul li{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: center;
 	height: 70%;
 	width: 80%;
 	margin: 5% 10%;
