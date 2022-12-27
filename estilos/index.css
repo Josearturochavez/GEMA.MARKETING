@@ -111,8 +111,20 @@ video{
 
 @media (orientation: portrait){
 	.contacto{
-		height: min(80vh,120vw);
+		height: 100vh;
 	}
+
+	.contacto ul{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	.contacto ul li{
+	height: 90%;
+	width: 90%;
+	margin: 2% 5%;
+	padding: 3%;
+}
 }
 
 .contacto ul i {
@@ -120,18 +132,23 @@ video{
 }
 
 .contacto ul li{
-	color: var(--primary-color-1);
-	display: flex;
-	background-color: var(--secundary-color-2);
-	flex-wrap: wrap;
-	align-content: space-around;
-	justify-content: center;
-	height: 70%;
-	width: 80%;
-	margin: 5% 10%;
-	border: 1vw solid var(--secundary-color-1);
-	border-radius: min(8vw,8vh);
-	padding: 5%;
+		color: var(--primary-color-1);
+		display: flex;
+		background-color: var(--secundary-color-2);
+		flex-wrap: wrap;
+		align-content: space-around;
+		justify-content: center;
+		border: 1vw solid var(--secundary-color-1);
+		border-radius: min(8vw,8vh);
+	}
+
+@media (orientation: landscape){
+	.contacto ul li{
+		height: 70%;
+		width: 80%;
+		margin: 5% 10%;
+		padding: 5%;
+	}
 }
 
 .contacto ul li a{
@@ -158,10 +175,27 @@ video{
 	border-radius: 30px;
 }
 
+@media (orientation: portrait){
+	.paquetes__menu{
+		flex-wrap: wrap;
+	}
+	.paquetes__menu label{
+		padding:0.5vh min(1.7vh,3.5vw);
+	}
+}
+
+@media (orientation: landscape){
+	.paquetes__menu{
+		flex-wrap: nowrap;
+	}
+	.paquetes__menu label{
+		padding: min(1.7vh,3.5vw);
+	}
+}
+
 .paquetes__menu label{
 	border-radius: 10px;
 	background-color: #f2884b;/*--secundary-color-1 x% opacidad*/
-	padding: min(1.7vh,3.5vw);
 	display: inline-block;
 	cursor: pointer;
 	transition: all 700ms ease;
