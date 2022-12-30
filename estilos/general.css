@@ -113,6 +113,7 @@ main{
 
 footer{
 	display: grid;
+	background-color: #111;
 }
 
 @media (orientation: portrait){
@@ -147,7 +148,6 @@ footer{
 
 @media (orientation: landscape){
 	footer{
-		background-color: #111;
 		height: 35vh;
 		grid-template-rows: 1fr;
 		grid-template-columns: 2fr 1fr;

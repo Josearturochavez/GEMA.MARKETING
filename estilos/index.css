@@ -51,6 +51,7 @@
 		text-align: center;
 	}
 	.presentacion{
+		justify-items: center;
 		font-size: min(5.5vw,2.4vh);
 		height: calc(25vh + 56vw);
 		grid-template-columns: 100%;
