@@ -147,6 +147,7 @@ footer{
 
 @media (orientation: landscape){
 	footer{
+		background-color: #111;
 		height: 35vh;
 		grid-template-rows: 1fr;
 		grid-template-columns: 2fr 1fr;
@@ -184,4 +185,8 @@ footer{
 	.legal ul li{
 		text-align: center;
 	}
+}
+
+address, .legal ul li{
+	color: white;
 }
