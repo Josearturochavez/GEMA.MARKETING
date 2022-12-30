@@ -66,6 +66,7 @@
 
 
 .video-descriptivo{
+	background-color: #999;
 	margin: 5vw 0;
 	width: 100%;
 	height: min(50vh,70vw);
@@ -102,6 +103,7 @@ video{
 
 .contacto ul{
 	display: grid;
+	justify-items: center;
 	align-items: center;
 	width: 100%;
 	height: 90%;
@@ -128,7 +130,7 @@ video{
 }
 
 .contacto ul i {
-	margin-left: 1em;
+	margin: 0 1em;
 }
 
 .contacto ul li{
@@ -144,20 +146,28 @@ video{
 
 @media (orientation: landscape){
 	.contacto ul li{
-		height: 70%;
-		width: 80%;
-		margin: 5% 10%;
-		padding: 5%;
+		height: 80%;
+		width: 95%;
+		padding: 2%;
 	}
 }
 
 .contacto ul li a{
 	color: var(--primary-color-1);
+	padding: 0.8vh 1.7vh;
+	border: var(--secundary-color-1) solid 1vh;
+	border-radius: 20px;
+	background-color: #9c69f9;
+}
+
+.contacto ul li a:hover{
+	background-color: #a975ff;
 }
 
 .paquetes{
+	background-color: #999;
 	width: 100%;
-	height: min(80vh,150vw);
+	height: min(90vh,180vw);
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-around;
@@ -166,13 +176,23 @@ video{
 .paquetes__menu {
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: flex-end;
 	width: 100%;
-	height: 10vh;
+	height: 18vh;
 }
 
 .paquetes__menu label:hover{
-	border-radius: 30px;
+	border-radius: 50px;
+	background-color: #8b52fe;
+}
+
+.paquetes__menu label{
+	display: flex;
+	border-radius: 10px;
+	background-color: var(--secundary-color-1);
+	align-items: center;
+	cursor: pointer;
+	transition: all 700ms ease;
 }
 
 @media (orientation: portrait){
@@ -180,7 +200,8 @@ video{
 		flex-wrap: wrap;
 	}
 	.paquetes__menu label{
-		padding:0.5vh min(1.7vh,3.5vw);
+		height: 35%;
+		padding:0.5vh min(2.3vh,3.5vw);
 	}
 }
 
@@ -189,21 +210,14 @@ video{
 		flex-wrap: nowrap;
 	}
 	.paquetes__menu label{
-		padding: min(1.7vh,3.5vw);
+		height: 50%;
+		padding: min(2.3vh,3.5vw);
 	}
-}
-
-.paquetes__menu label{
-	border-radius: 10px;
-	background-color: #f2884b;/*--secundary-color-1 x% opacidad*/
-	display: inline-block;
-	cursor: pointer;
-	transition: all 700ms ease;
 }
 
 .paquetes__descripcion{
 	width: 100%;
-	height: calc(100% - 10vh);
+	height: calc(100% - 18vh);
 	position: relative;
 	display: grid;
 	align-items: center;
