@@ -110,3 +110,78 @@ nav ul{
 main{
 	margin-top: var(--header-height);
 }
+
+footer{
+	display: grid;
+}
+
+@media (orientation: portrait){
+	footer{
+		height: 40vh;
+		grid-template-rows: 3fr 2fr;
+		grid-template-columns: 1fr;
+	}
+	.empresa{
+		display: flex;
+		align-items: center;
+	}
+
+	.empresa__figure, .empresa__imagen{
+		display: none;
+	}
+
+	address{
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.legal ul{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column-reverse;
+		height: 100%;
+	}
+}
+
+@media (orientation: landscape){
+	footer{
+		height: 35vh;
+		grid-template-rows: 1fr;
+		grid-template-columns: 2fr 1fr;
+	}
+	.empresa{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.empresa__figure{
+		width: min(40%,35vh);
+		display: inline-block;
+	}
+
+	.empresa__imagen{
+		max-width: 100%;
+	}
+
+	address{
+		text-align: center;
+		width: 58%;
+		display: inline-block;
+	}
+
+	.legal ul{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column-reverse;
+		height: 100%;
+	}
+
+	.legal ul li{
+		text-align: center;
+	}
+}
