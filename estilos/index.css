@@ -4,21 +4,20 @@
 }
 
 @media (orientation: landscape){
-
-	.presentacion{
+	.parrafo-1{
 		background-color: var(--secundary-color-2);
-		font-size: min(4.8vh,3.5vw);
+		font-size: min(4vh,3vw);
 		display: grid;
 		justify-items: center;
 		width: 100%;
-		height: 75vh;
-		grid-template-columns: 1fr 50vh;
-		grid-template-rows: 10vh 51vh;
+		height: 80vh;
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: 12vh 54vh;
 		align-items: center;
 		padding: 6vh 0 8vh;
 	}
 
-	.presentacion__texto{
+	.parrafo-1__texto{
 		text-align: justify;
 		padding: 0 2vw;
 		display: flex;
@@ -29,7 +28,62 @@
 		height: 100%;
 	}
 
-	.presentacion__titulo{
+	.parrafo-1__titulo{
+		font-size: min(4.6vh, 2.6vw);
+		text-align: justify;
+		display: flex;
+		align-items: center;
+		grid-row: 1/2;
+		grid-column: 1/3;
+		height: 100%;
+	}
+
+	.parrafo-1__imagen-figure{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.parrafo-1__imagen-logo{
+		width: 100%;
+		object-fit: contain;
+		max-height: 100%;
+	}
+
+	.parrafo-2__titulo h2{
+		font-size: 1.3em;
+		color: var(--primary-color-4);
+		text-shadow: 5px 3px 0.5em #ff4700, 3px 1px 1em #ff9100;
+		z-index: 1;
+	}
+
+	.parrafo-2{
+		background-color: var(--secundary-color-3);
+		font-size: min(4vh,3vw);
+		display: grid;
+		justify-items: center;
+		width: 100%;
+		height: 75vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 10vh 51vh;
+		align-items: center;
+		padding: 6vh 0 8vh;
+	}
+
+	.parrafo-2__texto{
+		text-align: justify;
+		padding: 0 2vw;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		height: 100%;
+	}
+
+	.parrafo-2__titulo{
 		text-align: justify;
 		display: flex;
 		align-items: flex-start;
@@ -38,7 +92,7 @@
 		height: 100%;
 	}
 
-	.presentacion__imagen-figure{
+	.parrafo-2__imagen-figure{
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -46,17 +100,10 @@
 		height: 100%;
 	}
 
-	.presentacion__imagen-logo{
+	.parrafo-2__imagen-logo{
 		height: 100%;
 	}
-
-	.quepierdes{
-		background-color: var(--secundary-color-3);
-		width: 100%;
-		height: 85vh;
-		display: flex;
-	}
-
+	
 	.contacto{
 		background-color: var(--secundary-color-1);
 		display: grid;
@@ -219,36 +266,76 @@
 }
 
 @media (orientation: portrait){
-
-	.presentacion{
+	.parrafo-1{
 		display: flex;
 		flex-wrap: wrap;
 		background-color: var(--secundary-color-2);
-		font-size: 6vw;
+		font-size: 5vw;
 		width: 100%;
-		height: min(100vw,85vh);
+		height: 135vw;
 	}
 
-	.presentacion__imagen-figure{
+	.parrafo-1__imagen-figure{
 		display: none;
 	}
 
-	.presentacion__titulo{
-		height: 30%;
+	.parrafo-1__titulo h1{
+		font-size: 1.4em;
 	}
 
-	.presentacion__texto{
-		height: 70%;
+	.parrafo-1__titulo{
+		height: 22%;
 	}
 
-	.presentacion__titulo,.presentacion__texto{
+	.parrafo-1__texto{
+		height: 78%;
+	}
+
+	.parrafo-1__titulo,.parrafo-1__texto{
 		display: flex;
 		text-align: justify;
 		align-items: center;
-		padding: 4vh 5vw;
+		padding: 1vh 5vw;
 		width: 100%;
 	}
+	.parrafo-2{
+		display: flex;
+		align-content: space-around;
+		justify-content: space-evenly;
+		flex-direction: column;
+		background-color: var(--secundary-color-3);
+		font-size: 5vw;
+		width: 100%;
+		height: 140vw;
+	}
 
+	.parrafo-2__imagen-figure{
+		display: none;
+	}
+
+	.parrafo-2__titulo h2{
+		font-size: 1.3em;
+		color: var(--primary-color-4);
+		text-shadow: 5px 3px 0.5em #ff4700, 3px 1px 1em #ff9100;
+		z-index: 1;
+	}
+
+	.parrafo-2__titulo{
+		height: 19%;
+	}
+
+	.parrafo-2__texto{
+		height: 73%;
+	}
+
+	.parrafo-2__titulo,.parrafo-2__texto{
+		display: flex;
+		text-align: justify;
+		align-items: center;
+		padding: 1vh 5vw;
+		width: 100%;
+	}
+	
 	.contacto{
 		background-color: var(--secundary-color-1);
 		display: flex;
@@ -325,7 +412,7 @@
 		font-size: 3.7vw;
 		background-color: var(--primary-color-1);
 		width: 100%;
-		height: min(85vh,120vw);
+		height: 155vw;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: space-around;
@@ -337,7 +424,7 @@
 		justify-content: space-evenly;
 		align-items: flex-end;
 		width: 100%;
-		height: 20%;
+		height: 25%;
 	}
 	.paquetes__menu label:hover{
 		border-radius: 8vw;
@@ -352,14 +439,14 @@
 		align-items: center;
 		cursor: pointer;
 		transition: all 0.5s;
-		height: 40%;
+		height: 35%;
 		width: 45%;
 		padding: 0 2.5vw;
 	}
 
 	.paquetes__descripcion{
 		width: 100%;
-		height: 80%;
+		height: 75%;
 		position: relative;
 		display: grid;
 		align-items: center;
@@ -370,13 +457,13 @@
 
 	.paquetes__descripcion div{
 		border: 0.2vw solid var(--secundary-color-1);
-		border-radius: 30px;
+		border-radius: 3.5vw;
 		background-color: var(--secundary-color-2);
-		padding: 4vh 6vh;
+		padding: 2vh 2vh;
 		grid-column: 1/2;
 		grid-row: 1/2;
 		transition: all 400ms ease;
-		max-width: 80%;
+		width: 85%;
 		transform: scale(0.9);
 		opacity: 0;
 		visibility: hidden;
