@@ -25,7 +25,7 @@
 					<li class="nav-button"><a href="index.html">GEMA</a></li>
 					<li class="nav-button"><a href="personalizado.html">PAQUETE PERSONALIZADO</a></li>
 					<li class="nav-button"><a href="contacto.html">CONTACTANOS</a></li>
-					<li class="nav-button"><a href="legal.html">TERMINOS</a></li>
+					<li class="nav-button"><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
 				</ul>
 			</nav>
 			<nav class="portatil">
@@ -34,12 +34,22 @@
 						<img class="logotipo-img" alt="isologo a color de GEMA MARKETING" src="visuales/isotipo.png">
 					</figure>
 				</a>
-				<ul>
-					<li class="nav-button"><a href="index.html">GEMA</a></li>
-					<li class="nav-button"><a href="personalizado.html">PAQUETE PERSONALIZADO</a></li>
-					<li class="nav-button"><a href="contacto.html">CONTACTANOS</a></li>
-					<li class="nav-button"><a href="legal.html">TERMINOS</a></li>
-				</ul>
+				<div class="nav__menu">
+					<input type="radio" id="uno" name="inp">
+					<div class="nav__menu-boton1">
+						<label for="uno"><i class="fa-solid fa-bars"></i></label>
+					</div>
+					<input type="radio" id="dos" name="inp" checked>
+					<div class="nav__menu-boton2">
+						<label for="dos"><i class="fa-solid fa-x"></i></label>
+						<ul>
+							<li class="nav-button"><a href="index.html">GEMA</a></li>
+							<li class="nav-button"><a href="personalizado.html">PAQUETE PERSONALIZADO</a></li>
+							<li class="nav-button"><a href="contacto.html">CONTACTANOS</a></li>
+							<li class="nav-button"><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<main>
@@ -74,7 +84,7 @@
 				<div class="paquetes__menu">
 					<label for="paquete1"><h2>BASICO</h2></label>
 					<label for="paquete2"><h2>AVANZADO</h2></label>
-					<label for="paquete3"><h2>PERSONALIZADO</h2></label>
+					<label id="paquetes_label3" for="paquete3"><h2>PERSONALIZADO</h2></label>
 				</div>
 				<div class="paquetes__descripcion">
 					<input type="radio" name="paquetes" id="paquete1">
