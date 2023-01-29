@@ -27,6 +27,7 @@ body{
 }
 
 address{
+	font-size: 3vw;
 	text-align: center;
 	width: 100%;
 }	
