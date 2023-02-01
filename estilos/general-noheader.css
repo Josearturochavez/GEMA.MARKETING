@@ -1,0 +1,5 @@
+body{
+	margin-top: var(--header-height);
+	font-size: min(2.6vh, 4.5vw);
+	color: var(--primary-color-2);
+}

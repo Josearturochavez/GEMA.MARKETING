@@ -3,6 +3,7 @@
 	src: url("../fuentes/GothamBlack.otf");
 }
 
+
 @media (orientation: landscape){
 	.parrafo-1{
 		background-color: var(--secundary-color-2);
@@ -140,7 +141,7 @@
 		justify-content: space-around;
 	    border-color: var(--primary-color-4);
 		height: 40%;
-		border-radius: 40px;
+		border-radius: 2vw;
 		border-style: solid;
 		padding: 2vw 1vw;
 		width: 100%;
@@ -156,7 +157,7 @@
 		width: 40%;
 		padding: 0.8vh 0 0.8vh 5vh;
 		border: var(--primary-color-3) solid 3px;
-		border-radius: 25px;
+		border-radius: 1vw;
 		scale: 1;
 	}
 
