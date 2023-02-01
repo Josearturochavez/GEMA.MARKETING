@@ -149,22 +149,25 @@
 	}
 
 	.contacto ul li a{
+		color: #000;
 		transition-duration: 0.4s;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-color: var(--primary-color-3);
 		height: 40%;
 		width: 40%;
 		padding: 0.8vh 0 0.8vh 5vh;
 		border: var(--primary-color-3) solid 3px;
 		border-radius: 1vw;
 		scale: 1;
+		font-size: 1.2em;
 	}
 
 	.contacto ul li a:hover{
 		scale: 1.2;
 		color: black;
-		font-size: 1.3em;
+		font-size: 1.4em;
 		background-color: var(--primary-color-3);
 	}
 
@@ -349,7 +352,7 @@
 	.contacto h2{
 		display: flex;
 		align-items: center;
-		font-size: 7vw;
+		font-size: 8vw;
 		color: var(--primary-color-4);
 		text-shadow: 
 			0 0 0.5em var(--primary-color-3),
@@ -384,6 +387,8 @@
 	}
 
 	.contacto ul li a{
+		background-color: var(--primary-color-1);
+		color: #000;
 		transition-duration: 0.1s;
 		display: flex;
 		align-items: center;
