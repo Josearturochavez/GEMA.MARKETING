@@ -117,6 +117,10 @@ nav{
 
 @media (orientation: portrait){
 
+	header{
+		width: 100vw;
+	}
+
 	#uno:checked ~ .nav__menu-boton2{
 		opacity: 100%;
 		right: calc(100vw - var(--header-height));

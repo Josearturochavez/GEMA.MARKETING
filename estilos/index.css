@@ -156,10 +156,10 @@
 		justify-content: center;
 		background-color: var(--primary-color-3);
 		height: 40%;
-		width: 40%;
+		width: min(55%,38vh);
 		padding: 0.8vh 0 0.8vh 5vh;
 		border: var(--primary-color-3) solid 3px;
-		border-radius: 1vw;
+		border-radius: min(2.5vw,4vh);
 		scale: 1;
 		font-size: 1.2em;
 	}
@@ -352,7 +352,7 @@
 	.contacto h2{
 		display: flex;
 		align-items: center;
-		font-size: 8vw;
+		font-size: 6vw;
 		color: var(--primary-color-4);
 		text-shadow: 
 			0 0 0.5em var(--primary-color-3),
@@ -387,7 +387,8 @@
 	}
 
 	.contacto ul li a{
-		background-color: var(--primary-color-1);
+		font-size: 1.1em;
+		background-color: var(--primary-color-3);
 		color: #000;
 		transition-duration: 0.1s;
 		display: flex;
