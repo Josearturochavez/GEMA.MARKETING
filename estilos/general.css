@@ -71,6 +71,7 @@ a{
 }
 
 footer{
+	width: 100%;
 	z-index: 2;
 	color: var(--primary-color-2);
 	display: grid;
@@ -251,7 +252,7 @@ nav{
 
 	footer{
 		height: min(50vh,80vw);
-		grid-template-rows: 3fr 2fr;
+		grid-template-rows: 2fr 1fr;
 		grid-template-columns: 1fr;
 		align-items: center;
 	}

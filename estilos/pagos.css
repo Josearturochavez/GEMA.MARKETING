@@ -1,3 +1,9 @@
+body{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .pagos__buscador{
 	display: flex;
 	justify-content: space-evenly;

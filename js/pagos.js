@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	function getlink () {
 		if (codigo.value === '') {
 		}else{
+			codigo.value = codigo.value.toLowerCase();
 			link = "./pagos/pago-";
 			link = link + codigo.value + '.html';
 			console.log(link);
