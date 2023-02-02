@@ -1,0 +1,54 @@
+.pagos__buscador{
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	align-items: center;
+}
+
+@media (orientation: landscape){
+	.pagos__button{
+		font-size: min(3.5vw, 3.5vh);
+		background-color: var(--primary-color-3);
+		color: #000;
+		height: 10vh;
+		width: 10vh;
+		padding: 0;
+	}
+
+
+	.pagos__button:hover{
+		font-size: min(4.5vw, 4.5vh);
+	}
+
+	.pagos__input{
+		border-radius: min(3vw,3.5vh);
+		font-size: min(3.8vw, 3.8vh);
+		height: 9vh;
+		width: 65vw;
+		padding: 0 2%;
+	}
+}
+
+@media (orientation: portrait){
+	.pagos__button{
+		border-radius: min(3vh, 4vw);
+		font-size: min(4.5vw, 4.5vh);
+		background-color: var(--primary-color-3);
+		color: #000;
+		height: min(14vw,9.5vh);
+		width: min(14vw,9.5vh);
+		padding: 0;
+	}
+
+	.pagos__button:hover{
+		font-size: min(5.5vw, 5.5vh);
+	}
+
+	.pagos__input{
+		padding: 0 3.5%;
+		border-radius: min(2.3vw,2.1vh);
+		font-size: min(4.8vw, 4.8vh);
+		height: min(12vw,8vh);
+		width: 60vw;
+	}
+}

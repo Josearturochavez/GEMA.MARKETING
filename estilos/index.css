@@ -149,26 +149,16 @@
 	}
 
 	.contacto ul li a{
-		color: #000;
-		transition-duration: 0.4s;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		background-color: var(--primary-color-3);
 		height: 40%;
 		width: min(55%,38vh);
-		padding: 0.8vh 0 0.8vh 5vh;
-		border: var(--primary-color-3) solid 3px;
-		border-radius: min(2.5vw,4vh);
-		scale: 1;
+		color: #000;
 		font-size: 1.2em;
 	}
 
 	.contacto ul li a:hover{
-		scale: 1.2;
-		color: black;
-		font-size: 1.4em;
 		background-color: var(--primary-color-3);
+		font-size: 1.4em;
 	}
 
 	.contacto ul li a h4{
@@ -390,23 +380,13 @@
 		font-size: 1.1em;
 		background-color: var(--primary-color-3);
 		color: #000;
-		transition-duration: 0.1s;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		height: 40%;
 		width: 80%;
-		padding: 0.8vh 0 0.8vh 5vw;
-		border: var(--primary-color-3) solid 3px;
-		border-radius: 20vw;
-		scale: 1;
 	}
 
 	.contacto ul li a:hover{
-		scale: 1.2;
-		color: black;
-		font-size: 1.3em;
 		background-color: var(--primary-color-3);
+		font-size: 1.3em;
 	}
 
 	.contacto ul li a h4{

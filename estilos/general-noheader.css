@@ -3,3 +3,60 @@ body{
 	font-size: min(2.6vh, 4.5vw);
 	color: var(--primary-color-2);
 }
+
+@media (orientation: portrait){
+	footer.nocompleto{
+		height: min(40vh, 68vw);
+	}
+	.pagos__div{
+		height: calc(100vh - min(40vh, 68vw) - min(15vh,20vw));
+	}
+}
+
+@media (orientation: landscape){
+	.pagos__div{
+		height: 50vh;
+	}
+}
+
+.pagos__div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.paypal__div{
+	display: flex;
+	justify-content: center;
+}
+@media (orientation: landscape){
+	.button{
+		border: var(--primary-color-3) solid 3px;
+		border-radius: 3vh;
+		scale: 1;
+		padding: 0.8vh 0 0.8vh 5vh;
+		transition-duration: 0.4s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.button:hover{
+		scale: 1.2;
+	}
+}
+
+@media (orientation: portrait){
+	.button{
+		border: var(--primary-color-3) solid 3px;
+		border-radius: 3vh;
+		scale: 1;
+		padding: 0.8vh 0 0.8vh 5vw;
+		transition-duration: 0.1s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.button:hover{
+		scale: 1.2;
+	}
+}

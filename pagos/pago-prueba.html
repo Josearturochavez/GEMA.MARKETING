@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="canonical" href="https://GEMA-MARKETING.com">
+		<link rel="stylesheet" type="text/css" href="../estilos/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../estilos/general.css">
+		<link rel="stylesheet" type="text/css" href="../estilos/general-noheader.css">
+		<link rel="stylesheet" type="text/css" href="../estilos/pagos.css">
+	</head>
+	<body>
+		<div class="pagos__div">
+			<h1>prueba</h1>
+			<div class="paypal__div" id="paypal-button-container-P-37V760151L6653630MPM6CSY"></div>
+
+			<script src="https://www.paypal.com/sdk/js?client-id=Ad4n-23Yf2iZH8X5sBwsRvWLrSl9qP6F7opsvPnd_-B0mqcerUys98JeSHO62PRdZ9E6slNnme2FMeMH&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+			<script>
+				paypal.Buttons({
+						style: {
+								shape: 'pill',
+								color: 'silver',
+								layout: 'vertical',
+								label: 'subscribe'
+						},
+						createSubscription: function(data, actions) {
+							return actions.subscription.create({
+								/* Creates the subscription */
+								plan_id: 'P-37V760151L6653630MPM6CSY',
+								quantity: 1 // The quantity of the product for a subscription
+							});
+						},
+						onApprove: function(data, actions) {
+							alert(data.subscriptionID); // You can add optional success message for the subscriber here
+						}
+				}).render('#paypal-button-container-P-37V760151L6653630MPM6CSY'); // Renders the PayPal button
+			</script>
+		</div>
+		<footer class="nocompleto">
+			<figure class="footer__figure">
+				<img class="footer__img" alt="isotipo de GEMA MARKETING" src="../visuales/isotipo fondo gris.png">
+			</figure>
+			<address>
+				GEMA-MARKETING CORREGIDORA N°80 CENTRO<br>
+				ZAMORA MICHOACAN 351 101 8700<br><br>
+				gema.marketing.contacto@gmail.com
+			</address>
+			<article class="legal">
+				<a href="legal.html">Políticas de GEMA MARKETING A.C. 2023</a>
+				<a href="main-faq.html">Preguntas frecuentes</a>
+			</article>
+		</footer>
+	</body>
+</html>
