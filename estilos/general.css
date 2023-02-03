@@ -57,6 +57,9 @@ address{
 	text-align: center;
 }
 
+[b="0"]{
+	color:var(--primary-color-1);
+}
 
 [b="1"]{
 	color:var(--primary-color-3);

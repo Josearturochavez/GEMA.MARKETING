@@ -11,8 +11,11 @@
 		<link rel="stylesheet" type="text/css" href="estilos/pagos.css">
 	</head>
 	<body>
-		<div class="pagos__div">
-			<h1>INDICA TU CODIGO DE PAGO</h1>
+		<div class="pagos__div main-pagos__div">
+			<div class="h1__div">
+				<h1>INDICA TU CODIGO DE PAGO</h1>
+			</div>
+			<div id="eror" class="error__div d-none">EL CODIGO QUE INSERTASTE NO ES CORRECTO</div>
 			<div class="pagos__buscador">
 				<input id="code" type="text" class="pagos__input" placeholder="CODIGO">
 				<button id="search" type="button" class="button pagos__button"><i class="fa-solid fa-magnifying-glass"></i></button>

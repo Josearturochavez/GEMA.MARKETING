@@ -11,30 +11,28 @@
 		<link rel="stylesheet" type="text/css" href="../estilos/pagos.css">
 	</head>
 	<body>
-		<div class="pagos__div" class="main-pagos__div">
-			<h1>prueba</h1>
-			<div class="paypal__div" id="paypal-button-container-P-37V760151L6653630MPM6CSY"></div>
-
+		<div class="pagos__div">
+			<h1>PAQUETE MEDIANO</h1>
+			<div class="paypal__div" id="paypal-button-container-P-3YL28831N8213561LMPOBDXA"></div>
 			<script src="https://www.paypal.com/sdk/js?client-id=Ad4n-23Yf2iZH8X5sBwsRvWLrSl9qP6F7opsvPnd_-B0mqcerUys98JeSHO62PRdZ9E6slNnme2FMeMH&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
 			<script>
-				paypal.Buttons({
-						style: {
-								shape: 'pill',
-								color: 'silver',
-								layout: 'vertical',
-								label: 'subscribe'
-						},
-						createSubscription: function(data, actions) {
-							return actions.subscription.create({
-								/* Creates the subscription */
-								plan_id: 'P-37V760151L6653630MPM6CSY',
-								quantity: 1 // The quantity of the product for a subscription
-							});
-						},
-						onApprove: function(data, actions) {
-							alert(data.subscriptionID); // You can add optional success message for the subscriber here
-						}
-				}).render('#paypal-button-container-P-37V760151L6653630MPM6CSY'); // Renders the PayPal button
+			  paypal.Buttons({
+			      style: {
+			          shape: 'pill',
+			          color: 'silver',
+			          layout: 'vertical',
+			          label: 'subscribe'
+			      },
+			      createSubscription: function(data, actions) {
+			        return actions.subscription.create({
+			          /* Creates the subscription */
+			          plan_id: 'P-3YL28831N8213561LMPOBDXA'
+			        });
+			      },
+			      onApprove: function(data, actions) {
+			        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+			      }
+			  }).render('#paypal-button-container-P-3YL28831N8213561LMPOBDXA'); // Renders the PayPal button
 			</script>
 		</div>
 		<footer class="nocompleto">
