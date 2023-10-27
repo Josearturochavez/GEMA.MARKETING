@@ -264,6 +264,7 @@
 	.parrafo-1{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		background-color: var(--secundary-color-2);
 		font-size: 4.5vw;
 		width: 100%;
